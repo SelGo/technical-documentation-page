@@ -1,0 +1,15 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  display: flex;
+}
+
+nav#navbar {
+  position: fixed;
+}
+
+main#main-doc {
+  text-align: justify;
+  max-width: 1000px;
+  margin-left: 300px;
+  padding: 30px;
+}
