@@ -1,17 +1,70 @@
 body {
   font-family: "Open Sans", Arial, sans-serif;
   display: flex;
+  margin: 0px;
 }
 
 nav#navbar {
   position: fixed;
+  border: 2px solid grey;
+  max-width: fit-content;
+  height: 100%;
+}
+
+nav#navbar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav#navbar ul li {
+  border-top: 2px solid grey;
+}
+
+nav#navbar ul li a {
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  color: black;
+  display: block;
+}
+
+nav#navbar header {
+  padding: 30px;
 }
 
 main#main-doc {
   text-align: justify;
-  max-width: 1000px;
-  margin-left: 300px;
-  padding: 30px;
+  max-width: 1150px;
+  margin-left: 375px;
+  margin-top: 35px;
+}
+
+header {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section#Hello_world header,
+section#Declaring_variables header,
+section#if_else_statement header,
+section#while_statement header,
+section#Function_declarations header {
+  margin-bottom: 16px;
+}
+
+section#Reference {
+  margin: 0px;
+}
+
+code {
+  background-color: #e8e8e8;
+  padding: 10px;
+  margin: 10px;
+  display: block;
 }
 
 @media (max-width: 530px) {
@@ -22,8 +75,9 @@ main#main-doc {
 
   nav#navbar {
     position: relative;
-    max-width: 200px;
     margin: 0 auto;
+    top: 0px;
+    left: 0px;
   }
 
   main#main-doc {
